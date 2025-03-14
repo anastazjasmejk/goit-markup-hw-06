@@ -688,7 +688,6 @@ img {
   color: #8e8f99;
 }
 .modal-span {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -707,7 +706,6 @@ img {
 }
 
 .icon-check {
-  display: none;
   fill: #f4f4fd;
 }
 #user-privacy:checked + label .modal-span {
@@ -715,9 +713,7 @@ img {
   border: none;
   fill: #f4f4fd;
 }
-#user-privacy:checked + label .modal-span .icon-check {
-  display: block;
-}
+
 .privacy-link {
   color: #4d5ae5;
 }
