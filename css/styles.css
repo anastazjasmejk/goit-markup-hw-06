@@ -247,6 +247,31 @@ img {
 
 /* ========= Main section styles ========= */
 
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 .section {
   width: 100%;
   min-height: 432px;
@@ -288,26 +313,25 @@ img {
       url(../images/hero-section/hero-image-mobile.jpg);
   }
 }
-
-@media only screen and (min-width: 768px) {
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .section {
-    /* max-width: 768px; */
-    height: 436px;
     margin-left: auto;
     margin-right: auto;
-    padding: 188px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
+}
 
-  .heading-main {
-    font-weight: 700;
-    line-height: 107%;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    font-size: 56px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.heading-main {
+  font-weight: 700;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  font-size: 56px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-resolution: 192dpi),
@@ -320,14 +344,22 @@ img {
       url(../images/hero-section/hero-image@2x.jpg);
   }
 }
-
+/* desktop */
 @media only screen and (min-width: 1158px) {
   .section {
     max-width: 1440px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 188px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
@@ -383,10 +415,30 @@ img {
 
 .features-items {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* desktop ≥1158px */
+.feature-item {
+  flex: 0 1 calc((100% - 3 * 24px) / 4);
 }
 
+/* Tablet */
+@media (max-width: 1157px) and (min-width: 768px) {
+  .feature-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .feature-item {
+    flex-basis: 100%;
+  }
+}
 .feature-item {
   width: 100%;
 }
@@ -415,19 +467,6 @@ img {
 
 .feature-item {
   width: calc((100% - 24px) / 2);
-}
-
-@media only screen and (min-width: 768px) {
-  .features-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    flex-direction: row;
-  }
-
-  .feature-title {
-    text-align: left;
-  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -462,6 +501,7 @@ img {
   }
 
   .feature-desc {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -472,10 +512,18 @@ img {
 /* ========= Team ========= */
 
 .section-team {
-  padding: 96px 0;
+  gap: 72px 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: #f4f4fd;
 }
-
+/* Tablet и Mobile */
+@media screen and (max-width: 1157px) {
+  .section-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
 .subheading-team {
   font-size: 36px;
   line-height: 1.11;
@@ -561,7 +609,6 @@ img {
 
 @media only screen and (max-width: 767px) {
   .team-list {
-    flex-direction: column;
     align-items: center;
   }
 
@@ -604,8 +651,17 @@ img {
 /* ========= Portfolio ========= */
 
 .section-portfolio {
+  gap: 72px 24px;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+/* Tablet и Mobile */
+@media screen and (max-width: 1157px) {
+  .section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 
 .subheading-portfolio {
@@ -807,7 +863,6 @@ img {
   flex-direction: column;
   gap: 12px;
   align-items: center;
-  max-width: 350px;
 }
 
 .footer-form-email {
@@ -852,7 +907,6 @@ img {
   min-width: 165px;
   height: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   background-color: #4d5ae5;
