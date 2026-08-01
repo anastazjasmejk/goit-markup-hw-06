@@ -28,10 +28,27 @@ h6,
 p {
     margin: 0;
 }
+
 .container {
-    width: 1158px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 .sr-only {
