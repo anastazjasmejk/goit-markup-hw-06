@@ -30,7 +30,7 @@ p {
 }
 
 .container {
-    width: 100%;
+    width: 320px;
     margin: 0 auto;
     padding: 0 16px;
 }

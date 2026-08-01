@@ -1,53 +1,21 @@
 /* ================= MOBILE ================= */
 
-@media screen and (max-width: 767px) {
-
-    .header {
-        padding: 16px 0;
-    }
-
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        margin-right: 0;
-        padding: 0;
-    }
-
-    .nav-list {
-        display: none;
-    }
-
-    .contact-info {
-        display: none;
-    }
-
-    .burger-btn {
-        display: flex;
-    }
+.container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-/* ================= TABLET ================= */
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-
-    .header-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .contact-info {
-        display: block;
-    }
-
-    .contact-list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -61,128 +29,21 @@
     padding: 16px 0;
 }
 
-
 .logo-style {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #2e2f42;
 }
 
 
-.nav {
-    display: flex;
-    align-items: center;
-}
-
 .nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 40px;
     display: none;
 }
 
 
-.nav-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-decoration: none;
-    padding: 24px 0;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: #404bbf;
-}
-
 .contact-info {
-    font-style: normal;
-    margin-left: auto;
-     display: none;
-}
-
-.contact-link {
-    color: #434455;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: none;
 }
 
 
-.current {
-    color: #404bbf;
-    position: relative;
-}
-
-.current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-.contact-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 40px;
-}
-
-.contact-item:last-child {
-    margin-right: 0;
-}
-
-.contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-decoration: none;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    color: #404bbf;
-    outline: none;
-}
-
-.container {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-
-.header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-}
 .burger-btn {
     margin-left: auto;
     background: transparent;
@@ -193,9 +54,109 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     cursor: pointer;
 }
-@media screen and (min-width:768px) {
+
+
+/* ================= TABLET  ================= */
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+
+    .header-container {
+        justify-content: flex-start;
+    }
+
+
+    .logo {
+        padding: 24px 0;
+        margin-right: 120px;
+    }
+
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-decoration: none;
+        padding: 24px 0;
+        display: block;
+    }
+
+
+    .contact-info {
+        display: block;
+        margin-left: auto;
+        font-style: normal;
+    }
+
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .contact-link {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #434455;
+        text-decoration: none;
+    }
+
 
     .burger-btn {
         display: none;
     }
+}
+
+
+/* ================= DESKTOP  ================= */
+
+@media screen and (min-width: 1158px) {
+
+
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .logo {
+        margin-right: 76px;
+        padding: 24px 0;
+    }
+
+
+    .contact-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+
+    .contact-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
 }
