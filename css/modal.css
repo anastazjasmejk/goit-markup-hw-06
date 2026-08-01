@@ -1,14 +1,19 @@
 /* ================= MOBILE ================= */
+.modal {
+    position: relative;
+    width: 288px;
+    min-height: 623px;
+    background: #fcfcfc;
+    border-radius: 4px;
+    padding: 72px 16px 24px;
 
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, .14),
+        0px 1px 3px rgba(0, 0, 0, .12),
+        0px 2px 1px rgba(0, 0, 0, .2);
+}
 @media screen and (max-width: 767px) {
-
-    .modal {
-        width: calc(100% - 32px);
-        max-width: 392px;
-        min-height: auto;
-        padding: 72px 16px 24px;
-    }
-
+ 
     .checkbox-label {
         align-items: flex-start;
         gap: 8px;
@@ -34,18 +39,6 @@
     }
 }
 
-.modal {
-    position: relative;
-    width: 408px;
-    min-height: 584px;
-    background: #fcfcfc;
-    border-radius: 4px;
-    padding: 72px 24px 24px;
-    box-shadow:
-        0px 1px 1px rgba(0, 0, 0, .14),
-        0px 1px 3px rgba(0, 0, 0, .12),
-        0px 2px 1px rgba(0, 0, 0, .2);
-}
 
 .modal-close-btn {
     position: absolute;

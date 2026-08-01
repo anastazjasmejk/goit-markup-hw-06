@@ -5,46 +5,38 @@
     .footer {
         padding: 96px 0;
     }
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 72px;
-    }
+.footer-logo-container,
+.footer-social-container,
+.subscribe-container {
+    text-align: center;
+}
 
-    .footer-logo-container {
-        margin-right: 0;
-    }
+.footer-text {
+    text-align: left;
+}
 
-    .footer-text {
-        max-width: 288px;
-    }
+.subscribe-container {
+    width: 100%;
+}
 
-    .footer-social-list {
-        justify-content: center;
-    }
+.subscribe-form {
+    width: 100%;
+}
 
-    .subscribe-container {
-        margin-left: 0;
-        width: 100%;
-    }
-
+.subscribe-input {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+}
     .subscribe-title {
         text-align: center;
-    }
-
-    .subscribe-form {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    .subscribe-input {
-        width: 100%;
-        max-width: 288px;
     }
 
     .subscribe-btn {
