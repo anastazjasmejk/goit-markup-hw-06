@@ -1,3 +1,43 @@
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 767px) {
+
+    .main-header-section {
+        padding: 72px 0;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-mobile.jpg");
+    }
+
+    .main-header {
+        max-width: 216px;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .button-primary {
+        margin-top: 72px;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .main-header-section {
+        padding: 112px 0;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-tablet.jpg");
+    }
+
+    .main-header {
+        max-width: 496px;
+    }
+}
+
 .main-header-section {
     background-color: #2e2f42;
 background-image:

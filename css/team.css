@@ -1,3 +1,47 @@
+ /* ================= MOBILE ================= */
+
+ @media screen and (max-width: 767px) {
+
+     .section-title-team {
+         padding-top: 96px;
+         padding-bottom: 96px;
+     }
+
+     .team-list {
+         flex-direction: column;
+         align-items: center;
+         gap: 72px;
+     }
+
+     .style-text-list {
+         width: 264px;
+         max-width: 264px;
+     }
+
+     .team-content {
+         padding: 32px 16px;
+     }
+ }
+
+ /* ================= TABLET ================= */
+
+ @media screen and (min-width: 768px) and (max-width: 1157px) {
+
+     .section-title-team {
+         padding-top: 96px;
+         padding-bottom: 96px;
+     }
+
+     .team-list {
+         gap: 64px 24px;
+     }
+
+     .style-text-list {
+         flex: 0 0 calc((100% - 24px) / 2);
+         max-width: calc((100% - 24px) / 2);
+     }
+ }
+ 
  .section-title-team {
      background-color: #f4f4fd;
     padding-top: 120px;

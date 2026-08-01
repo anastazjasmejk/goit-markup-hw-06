@@ -1,3 +1,64 @@
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 767px) {
+
+    .features-section {
+        padding: 96px 0;
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .features-item {
+        width: 100%;
+    }
+
+    .features-icon-box {
+        display: none;
+    }
+
+    .subtitle-advantages {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .text-info {
+        font-weight: 500;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .features-section {
+        padding: 96px 0;
+    }
+
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .features-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .features-icon-box {
+        display: none;
+    }
+
+    .subtitle-advantages {
+        margin-bottom: 8px;
+    }
+}
+
 .subtitle-advantages {
     font-weight: 500;
     font-size: 20px;

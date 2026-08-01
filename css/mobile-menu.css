@@ -1,3 +1,16 @@
+@media screen and (max-width: 767px) {
+
+    .mobile-menu-social-list {
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu-phone {
+        font-size: 24px;
+    }
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -24,15 +37,6 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
-
-
-.mobile-menu-container {
-    position: relative;
-
-    height: 100%;
-
-    padding: 80px 40px 40px;
 }
 
 
@@ -72,9 +76,6 @@
 }
 
 
-.mobile-menu-address {
-    margin-top: 80px;
-}
 
 
 .mobile-menu-phone {

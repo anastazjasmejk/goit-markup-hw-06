@@ -1,3 +1,39 @@
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 767px) {
+
+    .modal {
+        width: calc(100% - 32px);
+        max-width: 392px;
+        min-height: auto;
+        padding: 72px 16px 24px;
+    }
+
+    .checkbox-label {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .checkbox-custom {
+        flex-shrink: 0;
+    }
+
+    .modal-btn {
+        width: 100%;
+        max-width: 169px;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+    }
+}
+
 .modal {
     position: relative;
     width: 408px;
