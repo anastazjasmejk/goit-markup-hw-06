@@ -86,16 +86,17 @@ screen and (min-resolution: 2dppx) {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url("../images/people-office-tablet@2x.jpg");
+            url("../images/people-office-tablet.jpg");
     }
 
+.main-header {
+    max-width: 496px;
 
-    .main-header {
-
-        max-width: 496px;
-
-    }
-
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
 
     .button-primary {
 
