@@ -345,24 +345,16 @@
     }
 
 
-    .footer-logo-container {
-
-        margin-right: 120px;
-
-    }
-
-
-    .footer-social-container {
-
-        margin-right: auto;
-
-    }
-
-
-    .subscribe-container {
-
-        margin-left: auto;
-
-    }
+        .footer-logo-container {
+            margin-right: 120px;
+        }
+    
+        .footer-social-container {
+            margin-right: 80px;
+        }
+    
+        .subscribe-container {
+            margin-left: 0;
+        }
 
 }
